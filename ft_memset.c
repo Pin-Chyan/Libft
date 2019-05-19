@@ -6,7 +6,7 @@
 /*   By: event <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/19 09:57:22 by event             #+#    #+#             */
-/*   Updated: 2019/05/19 10:36:59 by event            ###   ########.fr       */
+/*   Updated: 2019/05/19 17:17:01 by event            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ void	memset(void *b, int c, size_t len)
 	char	*ptr;
 	size_t	i;
 
-	str = b;
+	ptr = b;
 	i = 0;
 	while (i < len)
 		*(ptr + i++) = c;
