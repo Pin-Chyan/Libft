@@ -6,10 +6,11 @@
 /*   By: event <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/20 17:04:23 by event             #+#    #+#             */
-/*   Updated: 2019/05/20 17:06:46 by event            ###   ########.fr       */
+/*   Updated: 2019/05/22 11:39:09 by pitsai           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <libft.h>
 
 size_t	strlcat(char * restrict dst, const char * restrict src, size_t dstsize);
+}

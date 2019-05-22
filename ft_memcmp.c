@@ -6,7 +6,7 @@
 /*   By: pitsai <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/21 12:15:22 by pitsai            #+#    #+#             */
-/*   Updated: 2019/05/21 13:11:58 by pitsai           ###   ########.fr       */
+/*   Updated: 2019/05/22 11:00:43 by pitsai           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ int		memcmp(const void *s1, const void *s2, size_t n)
 	s1c = (unsigned char *)s1;
 	s2c = (unsigned char *)s2;
 	while (++i < n && *(s1c + i) == (s2c + i))
-		if ( i == n)
+		if (i == n)
 			return (0);
 	return (*(s1c + i) - *(s2c + i));
 }
