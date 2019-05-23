@@ -6,7 +6,7 @@
 /*   By: pitsai <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/23 08:40:59 by pitsai            #+#    #+#             */
-/*   Updated: 2019/05/23 09:18:53 by pitsai           ###   ########.fr       */
+/*   Updated: 2019/05/23 10:50:52 by pitsai           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,4 +31,4 @@ int		ft_isprint(int c);
 int		ft_memcmp(const void *s1, const void *s2, size_t n);
 char	*ft_strcat(char *restrict s1, const char *restrict s2);
 char	*ft_strcpy(char *s1, char *s2);
-size_t	ft_strlcat(char * restrict dst, const char * restrict src, size_t dstsize); //busy
+size_t	ft_strlcat(char * restrict dst, const char * restrict src, size_t dstsize);
