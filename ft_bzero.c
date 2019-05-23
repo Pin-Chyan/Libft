@@ -6,20 +6,19 @@
 /*   By: event <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/19 10:03:53 by event             #+#    #+#             */
-/*   Updated: 2019/05/19 13:13:18 by event            ###   ########.fr       */
+/*   Updated: 2019/05/23 08:43:57 by pitsai           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <libft.h>
 
-void		bzero(void *s, size_t n)
+void		ft_bzero(void *s, size_t n)
 {
 	char	*ptr;
 	size_t	i;
 
 	if (!n)
 		return ;
-
 	ptr = s;
 	i = 0;
 	while (i < n)
