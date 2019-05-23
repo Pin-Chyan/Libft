@@ -6,13 +6,13 @@
 /*   By: event <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/20 16:54:11 by event             #+#    #+#             */
-/*   Updated: 2019/05/23 08:58:44 by pitsai           ###   ########.fr       */
+/*   Updated: 2019/05/23 11:02:13 by pitsai           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <libft.h>
 
-char	*strcpy(char * dst, const char * src, size_t len)
+char	*ft_strncpy(char *dst, const char *src, size_t len)
 {
 	size_t	i;
 
