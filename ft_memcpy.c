@@ -6,11 +6,11 @@
 /*   By: event <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/20 13:07:20 by event             #+#    #+#             */
-/*   Updated: 2019/05/23 11:29:21 by pitsai           ###   ########.fr       */
+/*   Updated: 2019/05/24 09:07:43 by pitsai           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <libft.h>
+#include "libft.h"
 
 void	*ft_memcpy(void *restrict dst, const void *restrict src, size_t n)
 {
