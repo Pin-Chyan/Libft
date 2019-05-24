@@ -6,21 +6,21 @@
 /*   By: pitsai <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/21 14:50:14 by pitsai            #+#    #+#             */
-/*   Updated: 2019/05/23 11:03:17 by pitsai           ###   ########.fr       */
+/*   Updated: 2019/05/24 14:33:58 by pitsai           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <libft.h>
 
-char	*ft_strcat(char *restrict s1, const char *restrict s2)
+char	*ft_strcat(char *s1, const char *s2)
 {
 	int		i;
 	int		j;
 
 	i = -1;
-	j = (int)(ft_strlen(s1);
-			while (*()s2 + ++i))
-		*(s1 +j++) = *(s2 + i);
+	j = (int)(ft_strlen(s1));
+	while (*(s2 + ++i))
+		*(s1 + j++) = *(s2 + i);
 	*(s1 + j) = '\0';
 	return (s1);
 }
