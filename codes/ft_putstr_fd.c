@@ -1,18 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putchar.c                                       :+:      :+:    :+:   */
+/*   ft_putstr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: event <marvin@42.fr>                       +#+  +:+       +#+        */
+/*   By: pitsai <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/05/15 14:27:40 by event             #+#    #+#             */
-/*   Updated: 2019/06/01 15:22:54 by pitsai           ###   ########.fr       */
+/*   Created: 2019/06/01 16:27:25 by pitsai            #+#    #+#             */
+/*   Updated: 2019/06/01 16:28:39 by pitsai           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <Libft.h>
+#include "libft.h"
 
-void	ft_putchar(char c)
+void	ft_putstr_fd(char const *s, int fd)
 {
-	ft_putchar_fd(c, 1);
+	while (s && *s)
+		ft_putstr_fd(*s++, fd);
 }
