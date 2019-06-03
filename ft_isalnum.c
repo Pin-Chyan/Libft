@@ -6,13 +6,13 @@
 /*   By: event <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/19 09:45:40 by event             #+#    #+#             */
-/*   Updated: 2019/05/23 08:44:15 by pitsai           ###   ########.fr       */
+/*   Updated: 2019/06/03 10:11:21 by pitsai           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <libft.h>
+#include "libft.h"
 
 int		ft_isalnum(int c)
 {
-	return (ft_islpha(c) || ft_isdigit(c));
+	return (ft_isalpha(c) || ft_isdigit(c));
 }

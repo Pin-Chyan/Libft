@@ -6,31 +6,29 @@
 /*   By: pitsai <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/27 11:51:23 by pitsai            #+#    #+#             */
-/*   Updated: 2019/05/31 17:45:21 by pitsai           ###   ########.fr       */
+/*   Updated: 2019/06/03 09:59:04 by pitsai           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int		ft_atoi(const char *str)
 {
-	int	i;
 	int	num;
 	int	sign;
 
-	i = 0;
 	num = 0;
 	sign = 1;
-	while (*(str[i]) == '\n' ||
-			*(str[i]) == '\t' ||
-			*(str[i]) == '\r' ||
-			*(str[i]) == '\v' ||
-			*(str[i]) == '\f' ||
-			*(str[i]) == ' ')
-		i++;
-	if (*(str + i) == '-')
+	while (*(str) == '\n' ||
+			*(str) == '\t' ||
+			*(str) == '\r' ||
+			*(str) == '\v' ||
+			*(str) == '\f' ||
+			*(str) == ' ')
+		str++;
+	if (*(str) == '-')
 		sign = -1;
-	if (*(str + i) == '-' || *(str[i]) == '+')
-		i++;
-	while (*(str + i) && *(str + i) >= '0' && *(str + i) <= '9')
-		num = num * 10 + (*(str + i++) - '0');
+	if (*(str) == '-' || *(str) == '+')
+		str++;
+	while (*(str) && *(str) >= '0' && *(str) <= '9')
+		num = num * 10 + (*(str++) - '0');
 	return (num * sign);
 }

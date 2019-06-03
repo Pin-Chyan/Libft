@@ -6,7 +6,7 @@
 /*   By: pitsai <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/27 11:29:52 by pitsai            #+#    #+#             */
-/*   Updated: 2019/06/01 15:14:23 by pitsai           ###   ########.fr       */
+/*   Updated: 2019/06/03 10:15:06 by pitsai           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,9 +29,9 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 			{
 				return ((char *)haystack + i);
 			}
-			j++
+			j++;
 		}
-		i++
+		i++;
 	}
 	return (0);
 }
