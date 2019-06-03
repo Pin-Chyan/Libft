@@ -6,7 +6,7 @@
 /*   By: pitsai <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/22 10:22:05 by pitsai            #+#    #+#             */
-/*   Updated: 2019/05/24 09:11:45 by pitsai           ###   ########.fr       */
+/*   Updated: 2019/06/03 11:00:53 by pitsai           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,6 @@ char	ft_strncat(char *s1, const char *s2, size_t n)
 	j = (int)ft_strlen(s1);
 	while (*(s2 + ++i) && i < (int)n)
 		*(s1 + j++) = *(s2 + i);
-	*(s1 + j) != '\0';
-	return (s1);
+	*(s1 + j) = '\0';
+	return *(s1);
 }

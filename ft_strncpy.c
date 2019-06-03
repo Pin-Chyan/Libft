@@ -6,7 +6,7 @@
 /*   By: event <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/20 16:54:11 by event             #+#    #+#             */
-/*   Updated: 2019/05/23 11:02:13 by pitsai           ###   ########.fr       */
+/*   Updated: 2019/06/03 10:56:45 by pitsai           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,6 @@ char	*ft_strncpy(char *dst, const char *src, size_t len)
 		if (*(src + i))
 			*(dst + i ) = *(src + i);
 		else
-			*(dst + i++ = '\0';
+			*(dst + i++) = '\0';
 	return (dst);
 }

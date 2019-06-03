@@ -6,7 +6,7 @@
 /*   By: pitsai <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/27 11:30:25 by pitsai            #+#    #+#             */
-/*   Updated: 2019/05/27 11:49:33 by pitsai           ###   ########.fr       */
+/*   Updated: 2019/06/03 10:54:06 by pitsai           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ char	*ft_strstr(const char *big, const char *little)
 			k = i;
 			good = 1;
 			while (*(little + j))
-				if (*(little + j++) != bit + k++)
+				if (*(little + j++) != *(big + k++))
 					good = 0;
 			if (good)
 				return ((char *)big + 1);

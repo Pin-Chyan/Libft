@@ -6,7 +6,7 @@
 /*   By: pitsai <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/23 08:40:59 by pitsai            #+#    #+#             */
-/*   Updated: 2019/06/03 10:10:59 by pitsai           ###   ########.fr       */
+/*   Updated: 2019/06/03 10:50:42 by pitsai           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ int		ft_isascii(int c);
 int		ft_isdigit(int c);
 int		ft_isprint(int c);
 int		ft_memcmp(const void *s1, const void *s2, size_t n);
-int		ft_strlen(char *str);
+int		ft_strlen(char const *str);
 int		ft_tolower(int c);
 int		ft_toupper(int c);
 int		ft_strcmp(const char *s1, const char *s2);
