@@ -6,13 +6,13 @@
 /*   By: pitsai <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/03 10:04:09 by pitsai            #+#    #+#             */
-/*   Updated: 2019/06/03 11:36:34 by pitsai           ###   ########.fr       */
+/*   Updated: 2019/06/03 12:56:16 by pitsai           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int		isupper(int c)
+int		ft_isupper(int c)
 {
-	return(c <= 'z' && c >= 'a');
+	return (c >= 'A' && c <= 'Z');
 }
