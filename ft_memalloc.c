@@ -6,13 +6,13 @@
 /*   By: pitsai <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/28 14:57:45 by pitsai            #+#    #+#             */
-/*   Updated: 2019/05/31 18:20:58 by pitsai           ###   ########.fr       */
+/*   Updated: 2019/06/04 17:01:38 by pitsai           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_malloc(size_t size)
+void	*ft_memalloc(size_t size)
 {
 	void	*mem;
 
