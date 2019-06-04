@@ -6,7 +6,7 @@
 /*   By: pitsai <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/23 08:40:59 by pitsai            #+#    #+#             */
-/*   Updated: 2019/06/04 12:36:23 by pitsai           ###   ########.fr       */
+/*   Updated: 2019/06/04 13:19:13 by pitsai           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,6 +37,7 @@ int		ft_strncmp(const char *s1, const char *s2, size_t n);
 int		ft_atoi(const char *str);
 int		ft_islower(int c);
 int		ft_isupper(int c);
+int		ft_iswhitespace(int c);
 char	*ft_strcat(char *s1, const char *s2);
 char	*ft_strcpy(char *s1, char *s2);
 char	*ft_strncat(char *s1, const char *s2, size_t n);
