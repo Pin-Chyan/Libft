@@ -6,7 +6,7 @@
 /*   By: pitsai <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/23 08:40:59 by pitsai            #+#    #+#             */
-/*   Updated: 2019/06/03 13:32:25 by pitsai           ###   ########.fr       */
+/*   Updated: 2019/06/04 12:36:23 by pitsai           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,7 +39,7 @@ int		ft_islower(int c);
 int		ft_isupper(int c);
 char	*ft_strcat(char *s1, const char *s2);
 char	*ft_strcpy(char *s1, char *s2);
-char	ft_strncat(char *s1, const char *s2, size_t n);
+char	*ft_strncat(char *s1, const char *s2, size_t n);
 char	*ft_strncpy(char *dst, const char *src, size_t len);
 char	*ft_strnstr(const char *big, const char *little, size_t len);
 char	*ft_strchr(const char *s, int c);

@@ -6,7 +6,7 @@
 /*   By: event <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/20 17:04:23 by event             #+#    #+#             */
-/*   Updated: 2019/06/03 11:15:43 by pitsai           ###   ########.fr       */
+/*   Updated: 2019/06/04 12:46:46 by pitsai           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ size_t	ft_strlcat(char *dst, const char *src,
 	j = 0;
 	dst_len = ft_strlen(dst);
 	src_len = ft_strlen(src);
-	if (dstsize > dst_len + 1)
+	if (dstsize < dst_len + 1)
 		return (src_len + dstsize);
 	if (dstsize > dst_len + 1)
 	{
