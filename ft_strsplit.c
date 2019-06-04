@@ -6,7 +6,7 @@
 /*   By: pitsai <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/01 14:59:18 by pitsai            #+#    #+#             */
-/*   Updated: 2019/06/01 15:08:34 by pitsai           ###   ########.fr       */
+/*   Updated: 2019/06/04 16:19:53 by pitsai           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,7 +34,7 @@ char		**ft_strsplit(char const *s, char c)
 	int		k;
 	char	**str2;
 
-	if (!s || !(str = (char **)malloc(sizeof(*str2) *
+	if (!s || !(str2 = (char **)malloc(sizeof(*str2) *
 				(ft_countwords(s, c) + 1))))
 		return (NULL);
 	i = -1;
@@ -50,6 +50,6 @@ char		**ft_strsplit(char const *s, char c)
 			str2[i][k++] = s[j++];
 		str2[i][k] = '\0';
 	}
-	str[i] = 0;
+	str2[i] = 0;
 	return (str2);
 }

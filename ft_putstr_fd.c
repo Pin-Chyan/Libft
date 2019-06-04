@@ -6,7 +6,7 @@
 /*   By: pitsai <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/01 16:27:25 by pitsai            #+#    #+#             */
-/*   Updated: 2019/06/01 16:28:39 by pitsai           ###   ########.fr       */
+/*   Updated: 2019/06/04 16:31:30 by pitsai           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,5 +15,5 @@
 void	ft_putstr_fd(char const *s, int fd)
 {
 	while (s && *s)
-		ft_putstr_fd(*s++, fd);
+		ft_putchar_fd(*s++, fd);
 }

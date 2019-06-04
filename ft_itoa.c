@@ -6,13 +6,13 @@
 /*   By: pitsai <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/31 18:16:37 by pitsai            #+#    #+#             */
-/*   Updated: 2019/05/31 18:16:40 by pitsai           ###   ########.fr       */
+/*   Updated: 2019/06/04 16:48:17 by pitsai           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static size_t	get_str_len(int n);
+static size_t	get_str_len(int n)
 {
 	size_t		i;
 

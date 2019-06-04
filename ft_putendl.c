@@ -6,13 +6,13 @@
 /*   By: pitsai <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/31 18:17:09 by pitsai            #+#    #+#             */
-/*   Updated: 2019/06/01 16:29:46 by pitsai           ###   ########.fr       */
+/*   Updated: 2019/06/04 16:44:34 by pitsai           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	ft_putendl(char const *s)
+void	ft_putendl(char const *s)
 {
 	ft_putendl_fd(s, 1);
 }
