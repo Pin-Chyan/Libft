@@ -6,7 +6,7 @@
 /*   By: pitsai <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/28 14:58:53 by pitsai            #+#    #+#             */
-/*   Updated: 2019/05/31 18:20:18 by pitsai           ###   ########.fr       */
+/*   Updated: 2019/06/05 08:17:52 by pitsai           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ char	*ft_strmap(char const *s, char (*f)(char))
 	if (!new_str)
 		return (NULL);
 	i = -1;
-	while (*(s + i++))
+	while (*(s + ++i))
 		*(new_str + i) = f(*(s + i));
 	return (new_str);
 }

@@ -1,40 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_atoi.c                                          :+:      :+:    :+:   */
+/*   ft_putnbr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: pitsai <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/05/27 11:51:23 by pitsai            #+#    #+#             */
-/*   Updated: 2019/06/05 08:37:10 by pitsai           ###   ########.fr       */
+/*   Created: 2019/06/05 08:23:06 by pitsai            #+#    #+#             */
+/*   Updated: 2019/06/05 08:48:28 by pitsai           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int		ft_atoi(const char *str)
+void	ft_putnbr_fd(int n, int fd)
 {
-	int	i;
-	int	num;
-	int	sign;
-
-	i = 0;
-	num = 0;
-	sign = 1;
-	while (ft_iswhitespace(str[i]))
-		i++;
-	if (*(str + i) == '-')
-		sign = -1;
-	if (*(str + i) == '-' || *(str + i) == '+')
-		i++;
-	while (ft_isdigit(str[i]))
+	if (n < 0)
 	{
-		if (num <= 2147483647 / 10)
-			num = num * 10 + (*(str + i++) - '0');
-		else if (sign == 1)
-			return (-1);
-		else
-			return (0);
+		ft_putchar_fd('-', fd);
+		n = -n;
 	}
-	return (num * sign);
+	if (n == -2147483648)
+	{
+		ft_putchar_fd('2', fd);
+		n %= 1000000000;
+		n = -n;
+	}
+	if (n >= 10)
+	{
+		ft_putnbr_fd(n / 10, fd);
+		ft_putnbr_fd(n % 10, fd);
+	}
+	else
+		ft_putchar_fd(n + '0', fd);
 }

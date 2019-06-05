@@ -6,7 +6,7 @@
 /*   By: pitsai <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/23 08:40:59 by pitsai            #+#    #+#             */
-/*   Updated: 2019/06/04 17:03:19 by pitsai           ###   ########.fr       */
+/*   Updated: 2019/06/05 08:55:14 by pitsai           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,6 +53,9 @@ size_t		ft_strlcat(char *dst, const char *src, size_t dstsize);
 //additional
 
 void		*ft_memalloc(size_t size);
+void		ft_memdel(void **ap);
+void		ft_strclr(char *s);
+void		ft_strdel(char **as);
 void		ft_putchar(char c);
 void		ft_putchar_fd(char c, int fd);
 void		ft_putstr(char *s);
@@ -61,6 +64,10 @@ void		ft_putendl(char const *s);
 void		ft_putendl_fd(char const *s, int fd);
 void		ft_striter(char *s, void (*f)(char *));
 void		ft_striteri(char *s, void (*f)(unsigned int, char *));
+void		ft_putnbr_fd(int n, int fd);
+void		ft_putnbr(int n);
+int			ft_strequ(char const *s1, char const *s2);
+int			ft_strnequ(char const *s1, char const *s2, size_t n);
 int			ft_countwords(char const *str, char c);
 char		*ft_itoa(int n);
 char		*ft_strtrim(char const *s);

@@ -6,7 +6,7 @@
 /*   By: pitsai <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/31 18:19:42 by pitsai            #+#    #+#             */
-/*   Updated: 2019/05/31 18:19:45 by pitsai           ###   ########.fr       */
+/*   Updated: 2019/06/05 08:22:59 by pitsai           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 int	ft_strequ(char const *s1, char const *s2)
 {
-	if (!s1 || s2)
+	if (!s1 || !s2)
 		return (0);
 	return (ft_strcmp(s1, s2) ? 0 : 1);
 }
