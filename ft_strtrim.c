@@ -1,12 +1,12 @@
-/************************************************************************** */
+/* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
 /*   ft_strtrim.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: pitsai <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/06/01 09:53:37 by pitsai            #+#    #+#             */
-/*   Updated: 2019/06/05 08:55:11 by pitsai           ###   ########.fr       */
+/*   Created: 2019/06/05 10:12:25 by pitsai            #+#    #+#             */
+/*   Updated: 2019/06/05 10:14:20 by pitsai           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,8 @@ char	*ft_strtrim(char const *s)
 	int		end;
 	char	*ptr;
 
+	if (!s)
+		return (NULL);
 	start = 0;
 	end = ft_strlen(s) - 1;
 	while ((s[start] == ' ') || (s[start] == '\t') || (s[start] == '\n'))
@@ -27,11 +29,10 @@ char	*ft_strtrim(char const *s)
 		return ("");
 	while ((s[end] == ' ') || (s[end] == '\t') || (s[end] == '\n'))
 		end--;
-	ptr = malloc(end - start + 2);
-		if (!ptr)
-			return (NULL);	
+	if (!(ptr = malloc(end - start + 2)))
+		return (NULL);
 	i = start;
-	while ( i <= end)
+	while (i <= end)
 	{
 		ptr[i - start] = s[i];
 		i++;
