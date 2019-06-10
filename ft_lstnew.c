@@ -1,3 +1,14 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_lstnew.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: pitsai <marvin@42.fr>                      +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2019/06/10 09:10:08 by pitsai            #+#    #+#             */
+/*   Updated: 2019/06/10 09:43:56 by pitsai           ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #include "libft.h"
 
@@ -14,9 +25,9 @@ t_list	*ft_lstnew(void const *content, size_t content_size)
 	}
 	else
 	{
-		if (!(list->conent = malloc(content_size)))
+		if (!(list->content = malloc(content_size)))
 			return (NULL);
-		ft_memcpy(list->, content, content_size);
+		ft_memcpy(list->content, content, content_size);
 		list->content_size = content_size;
 	}
 	list->next = NULL;
