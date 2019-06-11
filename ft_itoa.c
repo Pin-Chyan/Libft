@@ -22,10 +22,10 @@ static size_t	get_str_len(int n)
 	return (i);
 }
 
-char		*ft_itoa(int n)
+char			*ft_itoa(int n)
 {
-	char		*str;
-	size_t		str_len;
+	char			*str;
+	size_t			str_len;
 	unsigned int	n_cpy;
 
 	str_len = get_str_len(n);

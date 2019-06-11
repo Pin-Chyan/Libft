@@ -30,4 +30,3 @@ int		ft_countwords(char const *str, char c)
 	}
 	return (count);
 }
-

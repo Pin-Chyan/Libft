@@ -15,9 +15,9 @@
 int		ft_iswhitespace(int c)
 {
 	return (c == '\n' ||
-		 	c == '\t' ||
-			c == '\r' ||
-			c == '\v' ||
-			c == '\f' ||
-			c == ' ');
+		c == '\t' ||
+		c == '\r' ||
+		c == '\v' ||
+		c == '\f' ||
+		c == ' ');
 }
