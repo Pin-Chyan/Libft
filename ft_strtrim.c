@@ -26,7 +26,7 @@ char	*ft_strtrim(char const *s)
 	while ((s[start] == ' ') || (s[start] == '\t') || (s[start] == '\n'))
 		start++;
 	if (s[start] == '\0')
-		return ("");
+		return (ft_strdup(""));
 	while ((s[end] == ' ') || (s[end] == '\t') || (s[end] == '\n'))
 		end--;
 	if (!(ptr = malloc(end - start + 2)))
