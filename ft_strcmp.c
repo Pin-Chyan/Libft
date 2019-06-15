@@ -6,7 +6,7 @@
 /*   By: pitsai <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/11 12:54:34 by pitsai            #+#    #+#             */
-/*   Updated: 2019/06/11 12:54:36 by pitsai           ###   ########.fr       */
+/*   Updated: 2019/06/15 11:11:25 by pitsai           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,6 @@ int	ft_strcmp(const char *s1, const char *s2)
 		return (1);
 	else if (tmp < 0)
 		return (-1);
-	else 
+	else
 		return (tmp);
 }
