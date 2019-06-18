@@ -6,7 +6,7 @@
 /*   By: pitsai <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/27 11:51:23 by pitsai            #+#    #+#             */
-/*   Updated: 2019/06/12 16:25:29 by pitsai           ###   ########.fr       */
+/*   Updated: 2019/06/18 09:31:35 by pitsai           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,12 +29,7 @@ int		ft_atoi(const char *str)
 		i++;
 	while (ft_isdigit(str[i]))
 	{
-		if (num <= 2147483647 / 10)
-			num = num * 10 + (*(str + i++) - '0');
-		else if (sign == 1)
-			return (-1);
-		else
-			return (0);
+		num = num * 10 + (*(str + i++) - '0');
 	}
 	return (num * sign);
 }

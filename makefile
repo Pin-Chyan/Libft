@@ -6,27 +6,29 @@
 #    By: pitsai <marvin@42.fr>                      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/05/27 11:31:09 by pitsai            #+#    #+#              #
-#    Updated: 2019/06/03 11:35:39 by pitsai           ###   ########.fr        #
+#    Updated: 2019/06/18 09:54:34 by pitsai           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = libft.a
-FLAGS = -Wall -Wextra -Werror -I. -c
-FILE := $(wildcard *.c)
+FLAGS = -Wall -Wextra -Werror -c
+FILE := $(wildcard ft_*.c)
 OBJ = $(FILE:%.c=%.o) #everything in File, but change .c to .o
+
+.PHONY: clean
 
 all: $(NAME)
 
-$(NAME): $(OBJ)
-	ar rcs $(NAME) $(OBJ)
-
+$(NAME): $(OBJ) #libft.a: ft_atoi.o
+	@ar rcs $(NAME) $(OBJ)
+	@echo "Panda built a bunny"
 $(OBJ): $(FILE)
-	gcc $(FLAGS) $(FILE)
+	@gcc $(FLAGS) $(FILE)
 
 clean:
-	rm -f $(OBJ)
-
+	@rm -f $(OBJ)
+	@echo "Panda ate a bunny"
 fclean: clean
-	rm -f $(NAME)
-
+	@rm -f $(NAME)
+	@echo "Panda laid schematics for a bunny"
 re: fclean all
