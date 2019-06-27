@@ -6,7 +6,7 @@
 /*   By: pitsai <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/01 16:29:52 by pitsai            #+#    #+#             */
-/*   Updated: 2019/06/04 16:37:29 by pitsai           ###   ########.fr       */
+/*   Updated: 2019/06/27 09:45:54 by pitsai           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,5 +14,15 @@
 
 void	ft_putendl_fd(char const *s, int fd)
 {
-	ft_putstr_fd(ft_strjoin(s, "\n"), fd);
+	size_t	i;
+
+	if (!s)
+		return ;
+	i = 0;
+	while (i < ft_strlen(s))
+	{
+		ft_putchar_fd(s[i], fd);
+		i++;
+	}
+	write(fd, "\n", 1);
 }
