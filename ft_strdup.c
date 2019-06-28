@@ -6,13 +6,13 @@
 /*   By: event <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/20 13:59:54 by event             #+#    #+#             */
-/*   Updated: 2019/06/03 11:16:16 by pitsai           ###   ########.fr       */
+/*   Updated: 2019/06/28 09:31:05 by pitsai           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_strdup(char *src)
+void	*ft_strdup(const char *src)
 {
 	char	*s;
 	int		len;
