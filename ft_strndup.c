@@ -1,32 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strjoin.c                                       :+:      :+:    :+:   */
+/*   ft_strndup.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: pitsai <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/06/11 12:55:25 by pitsai            #+#    #+#             */
-/*   Updated: 2019/07/09 13:29:03 by pitsai           ###   ########.fr       */
+/*   Created: 2019/07/02 09:16:02 by pitsai            #+#    #+#             */
+/*   Updated: 2019/07/02 09:19:00 by pitsai           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strjoin(char const *s1, char const *s2)
+char	*ft_strndup(const char *s1, size_t n)
 {
-	int		size;
-	char	*str;
+	char	*tmp;
 
-	size = 0;
-	if (s1 && s2 != NULL)
-	{
-		size = ft_strlen(s1) + ft_strlen(s2);
-		str = (char*)malloc(sizeof(*str) * (size + 1));
-		if (str == NULL)
-			return (NULL);
-		ft_strcpy(str, s1);
-		ft_strcat(str, s2);
-		return (str);
-	}
-	return (NULL);
+	if (!(tmp = ft_strnew(n)))
+		return (NULL);
+	ft_strncpy(tmp, s1, n);
+	return (tmp);
 }

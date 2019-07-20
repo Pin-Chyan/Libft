@@ -12,7 +12,7 @@
 
 #include "libft.h"
 
-void	*ft_strdup(const char *src)
+char	*ft_strdup(const char *src)
 {
 	char	*s;
 	int		len;
