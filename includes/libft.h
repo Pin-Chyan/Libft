@@ -6,7 +6,7 @@
 /*   By: pitsai <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/23 08:40:59 by pitsai            #+#    #+#             */
-/*   Updated: 2019/07/02 09:18:47 by pitsai           ###   ########.fr       */
+/*   Updated: 2019/08/23 11:16:44 by pitsai           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -75,12 +75,15 @@ char				*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 
 char				*ft_strdup(const char *src);
 char				*ft_strndup(const char *s1, size_t n);
+double				ft_atof(const char *str);
 
 typedef struct		s_list
 {
+	int				data;
 	void			*content;
 	size_t			content_size;
 	struct s_list	*next;
+	struct s_list	*prev;
 }					t_list;
 
 void				ft_lstadd(t_list **alst, t_list *new);
